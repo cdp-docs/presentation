@@ -1,1 +1,66 @@
-site_name: My Docs
+site_name: CDP Presentation Docs
+site_url: https://mydocs.example.com
+site_description: A comprehensive guide to creating Coinbase documentation.
+
+# Navigation structure
+nav:
+  - Getting Started: getting-started.md
+  - Create a wallet: backend-create-wallet.md
+  - Examples:
+    - Portfolio Tracking: examples/tutorial.md
+  - Blog:
+    - blog/index.md
+#  - Introduction:
+#      - Overview: introduction/overview.md
+#      - Getting Started: introduction/getting-started.md
+#  - User Guide:
+#      - Installation: user-guide/installation.md
+#      - Configuration: user-guide/configuration.md
+#      - FAQ: user-guide/faq.md
+#  - Reference:
+#      - API: reference/api.md
+#      - Glossary: reference/glossary.md
+#  - Contact: contact.md
+
+# Theme configuration
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: pink
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+  features:
+    - content.code.copy
+    - navigation
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+# Plugins section (optional)
+plugins:
+  - blog:
+      blog_toc: true
+  - search  # Enables the search plugin (for a searchable site)
+
+# Markdown Extensions
+markdown_extensions:
+  - toc:  # Table of contents for auto-generated TOC in pages
+      permalink: true
+      title: On this page
+  - admonition:  # For creating warning, note, and other admonition blocks
+  - codehilite:  # Syntax highlighting for code blocks
+  - footnotes:  # To add footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.blocks.admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+
