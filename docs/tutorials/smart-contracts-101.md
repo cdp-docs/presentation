@@ -17,7 +17,7 @@ You will learn:
 
 - [x] The rundown on Smart Contracts and their value
 - [x] How to create and deploy a token contract for in-game transactions (including a supply of Game tokens)
-- [x] How to interact with the contract in your video game code
+- [x] How to interact with the contract in your game code
 
 Keep reading to learn how to apply Smart Contracts to an in-game purchase from a store.
 
@@ -57,10 +57,10 @@ At this point you can see how Smart Contracts might be useful for various agreem
 
 ### Tools used
 
-- **Coinbase Developer Platform (CDP):** Tools and APIs for developers to integrate Coinbase services into decentralized applications, enabling easy management of crypto assets, transactions, and more
-  - **Coinbase Wallet API:** Create and manage cryptocurrency wallets, enabling secure storage and transactions of digital assets
-  - **Coinbase Transfers API:** Provides programmatic access to initiate, monitor, and manage cryptocurrency transfers, allowing integration of payments and transfers into applications
-  - **Platform Portal:** Web interface where developers can manage their projects, access API documentation, and configure their API keys and other settings for integration with Coinbase’s services
+- **[Coinbase Developer Platform (CDP)](https://www.coinbase.com/developer-platform):** Tools and APIs for developers to integrate Coinbase services into decentralized applications, enabling easy management of crypto assets, transactions, and more
+  - **[CDP MPC Wallet API](https://docs.cdp.coinbase.com/mpc-wallet/docs/welcome):** Create and manage cryptocurrency wallets, enabling secure storage and transactions of digital assets
+  - **[CDP Transfers API](https://docs.cdp.coinbase.com/mpc-wallet/docs/transfers):** Provides programmatic access to initiate, monitor, and manage cryptocurrency transfers, allowing integration of payments and transfers into applications
+  - **[CDP Portal](https://portal.cdp.coinbase.com/):** Web interface where developers can manage their projects, access API documentation, and configure their API keys and other settings for integration with Coinbase’s services
 
 While Smart Contracts come in multiple flavors, this guide will be using `ERC20` format.
 
