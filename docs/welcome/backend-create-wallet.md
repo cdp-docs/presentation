@@ -7,10 +7,10 @@ The CDP SDK allows you to create wallets and send funds onchain within minutes.Â
 
 In this quickstart, you will learn:
 
-- How to create a Developer-Managed wallet
-- Fund the wallet with testnet ETH (for experimentation using a simulated ETH network)
-- Transfer funds between wallets
-- Trade assets  
+- [x] How to create a Developer-Managed wallet
+- [x] Fund the wallet with testnet ETH (for experimentation using a simulated ETH network)
+- [x] Transfer funds between wallets
+- [x] Trade assets  
 
 ## Prerequisites
 

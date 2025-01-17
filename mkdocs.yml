@@ -1,26 +1,13 @@
 site_name: CDP Presentation Docs
 site_url: https://mydocs.example.com
-site_description: A comprehensive guide to creating Coinbase documentation.
 
 # Navigation structure
 nav:
-  - Getting Started: getting-started.md
-  - Create a wallet: backend-create-wallet.md
-  - Examples:
-    - Portfolio Tracking: examples/tutorial.md
+  - Welcome: 
+      - Getting Started: welcome/getting-started.md
+      - Create a wallet: welcome/backend-create-wallet.md
   - Blog:
     - blog/index.md
-#  - Introduction:
-#      - Overview: introduction/overview.md
-#      - Getting Started: introduction/getting-started.md
-#  - User Guide:
-#      - Installation: user-guide/installation.md
-#      - Configuration: user-guide/configuration.md
-#      - FAQ: user-guide/faq.md
-#  - Reference:
-#      - API: reference/api.md
-#      - Glossary: reference/glossary.md
-#  - Contact: contact.md
 
 # Theme configuration
 theme:
@@ -34,11 +21,12 @@ theme:
     code: "Roboto Mono"
   features:
     - content.code.copy
+    - content.code.annotate 
     - navigation
     - navigation.tabs
     - navigation.tabs.sticky
 
-# Plugins section (optional)
+# Plugins 
 plugins:
   - blog:
       blog_toc: true
@@ -46,12 +34,12 @@ plugins:
 
 # Markdown Extensions
 markdown_extensions:
-  - toc:  # Table of contents for auto-generated TOC in pages
+  - toc:  
       permalink: true
       title: On this page
-  - admonition:  # For creating warning, note, and other admonition blocks
-  - codehilite:  # Syntax highlighting for code blocks
-  - footnotes:  # To add footnotes
+  - admonition:  
+  - codehilite:  
+  - footnotes:  
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -63,4 +51,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.details
-
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true

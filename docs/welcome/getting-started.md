@@ -57,7 +57,7 @@ Assuming you are already signed in, create an API key from the [CDP portal](http
 
 Click the **Create API key** button under the **API Keys** tab:
 
-![Create API Key](img/cdp-api-key.png)
+![Create API Key](../img/setup.png)
 
 Give the key a name. Under **API-specific restrictions** check **View**, **Trade**, and **Transfer**.
 
