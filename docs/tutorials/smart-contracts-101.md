@@ -7,7 +7,7 @@ tags:
   - Smart Contracts
 ---
 
-# Smart Contracts 101: A Beginner's Guide using Coinbase SDK and in-game currency
+# Smart Contracts 101: A Beginner's Guide using Coinbase SDK for in-game currency agreements
 
 ## Introduction
 
@@ -50,17 +50,17 @@ APIs (and more specifically, API Specs) are contracts between a client and serve
 While APIs rely on a centralized server, a Smart Contract differs in that its true value is in the nature of its decentralized environment. Because Smart Contracts run on the blockchain, this means:
 
 - **[Trustless](https://academy.binance.com/en/glossary/trustless) Transactions:** Because Smart Contracts are immutable, promises are unbreakable. Invested parties only need to trust in the code instead of asking, "Can I trust this person?"
-- **Transparency:** A deployed contract can be inspected by anyone on the blockchain. 
+- **Transparent:** A deployed contract can be inspected by anyone on the blockchain. 
 - **Automated:** Contract rules are enforced automatically without a middle man.
 
-A Smart Contract is an unbreakable promise. Hopefully at this point you can see how they might be useful for various agreements, whether pretend money (like in a video game), or actual currency (for example, an agreement when purchasing a car or home).
+At this point you can see how Smart Contracts might be useful for various agreements, whether for in-game currency transactions, or, for example, currency transactions when purchasing a home or insurance policy.
 
 ### Tools used
 
-- **Coinbase Developer Platform:** Set of tools and APIs that allow developers to integrate Coinbase services into decentralized applications, enabling easy management of crypto assets, transactions, and more.
-  - **Coinbase Wallet API:** Create and manage cryptocurrency wallets, enabling secure storage and transactions of digital assets.
-  - **Coinbase Transfers API:** Provides programmatic access to initiate, monitor, and manage cryptocurrency transfers, allowing integration of payments and transfers into applications.
-  - **Platform Portal:** Web interface where developers can manage their projects, access API documentation, and configure their API keys and other settings for integration with Coinbase’s services.
+- **Coinbase Developer Platform:** Tools and APIs for developers to integrate Coinbase services into decentralized applications, enabling easy management of crypto assets, transactions, and more
+  - **Coinbase Wallet API:** Create and manage cryptocurrency wallets, enabling secure storage and transactions of digital assets
+  - **Coinbase Transfers API:** Provides programmatic access to initiate, monitor, and manage cryptocurrency transfers, allowing integration of payments and transfers into applications
+  - **Platform Portal:** Web interface where developers can manage their projects, access API documentation, and configure their API keys and other settings for integration with Coinbase’s services
 
 While Smart Contracts come in multiple flavors, this guide will be using `ERC20` format.
 
@@ -186,7 +186,7 @@ Once your new token contract has been deployed, you should see it here.
 
 ![CDP portal](../img/cdp_portal.png)
 
-## Step 3 -- Inspect the public contract
+## Step 3 -- Inspect the public contract with a block explorer
 
 Now that your `GameCoin` token contract has been deployed, it is now visible to you, game players, or anyone else using the public internet!
 
@@ -202,7 +202,7 @@ Let's put this use case in terms of our real-world example: in-game currency!
 
 We want to give players the ability to buy items using our new `GameCoin`. This means that whenever a player purchases an item from our store, we need to interact with our token contract to handle the transfer.
 
-### Using `invoke_contract`
+### Using Coinbase Wallet API with `invoke_contract`
 
 Assuming you have a persisted wallet, using the deployed token contract address you could define a buy_item function like so:
 
