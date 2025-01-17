@@ -30,14 +30,14 @@ It is assumed you have already completed the [Getting Started](../welcome/gettin
 
 This guide also assumes: 
 
-- You are running Python `v3.12.3+`
-- You have at least two [funded wallets](../welcome/backend-create-wallet.md); One for a game player and another for the game shop
+- [x] You are running Python `v3.12.3+`
+- [x] You have at least two [funded wallets](../welcome/backend-create-wallet.md); One for a game player and another for the game shop
 
 ### What is a Smart Contract?
 
 To help us understand Smart Contracts, we can draw an analogy using a developer concept you are likely familiar with: APIs. 
 
-APIs (and more specifically, API Specs) are contracts between a client and server, which yields for some nice parallels. Both APIs and Smart Contracts:
+APIs (and more specifically, API Specs) are contracts between a client and server, which yield for some nice parallels. Both APIs and Smart Contracts:
 
 | **Aspect** | **APIs** | **Smart Contracts** |
 |------------|----------|---------------------|
@@ -73,7 +73,9 @@ While Smart Contracts come in multiple flavors, this guide will be using `ERC20`
 
     Read more in the [Open Zeppelin docs](https://docs.openzeppelin.com/contracts/3.x/tokens).
 
-## Typical Smart Contract Workflow
+## Typical Workflow
+
+### Without Coinbase SDK
 
 Typically, to create and deploy an ERC20 Smart Contract involves many steps:
 
@@ -118,7 +120,7 @@ As a recommendation, these steps should also include testing (using tools like `
 
 Keep reading and we will compare why the Coinbase Developer Platform SDK makes these process much easier.
 
-## Coinbase Smart Contract Workflow
+### With Coinbase SDK
 
 See how intensive a typical workflow is when creating even a basic Smart Contract? This is where the Coinbase Developer Platform SDK can really step in to alleviate you of your pain!
 
