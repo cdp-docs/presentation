@@ -176,7 +176,7 @@ This will:
 
 All other required ECR20 functions are provided for you out of the box, as described in `"What Smart Contract formats are available?"` above.
 
-## Step 2 -- Verify deployment in the CDP Portal 
+## Step 2 -- Verify deployment in CDP Portal 
 
 Coinbase provides [a nice dashboard](https://portal.cdp.coinbase.com/products/onchain-data/smart-contracts) of all your deployed contracts. Here, you can access your deployed contract addresses, or modify basic configuration such as the Contract name. 
 
@@ -184,7 +184,7 @@ Once your new token contract has been deployed, you should see it here.
 
 ![CDP portal](../img/cdp_portal.png)
 
-## Step 2 -- Inspect the public contract
+## Step 3 -- Inspect the public contract
 
 Now that your `GameCoin` token contract has been deployed, it is now visible to you, game players, or anyone else using the public internet!
 
@@ -194,7 +194,7 @@ Check out the [Sepola Base Scan](https://sepolia.basescan.org/) Block Explorer t
 
 ![sepolia](../img/sepolia.png)
 
-## Step 3 -- Interact with contract from game code
+## Step 4 -- Interact with contract from game code
 
 Let's put this use case in terms of our real-world example: in-game currency! 
 
@@ -202,7 +202,7 @@ We want to give players the ability to buy items using our new `GameCoin`. This 
 
 ### Using `invoke_contract`
 
-Assuming you have a persisted wallet, using the deployed token contract address you saw in [Step 2](#step-2----verify-deployment-in-the-cdp-portal) you could define a buy_item function like so:
+Assuming you have a persisted wallet, using the deployed token contract address you could define a buy_item function like so:
 
 ``` python title="game.py"
 def buy_item(player_wallet, contract_address, item_price, shop_address):
