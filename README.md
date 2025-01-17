@@ -50,6 +50,6 @@ I will probably end up moving my old blog posts over here one day, so I wrote th
 
 The Smart Contracts 101 guide is what serves as my presentation assignment: https://cdp-docs.github.io/presentation/tutorials/smart-contracts-101/. 
 
-### Code
+### Examples
 
 The example game code can be found in [game.py](examples/game.py).
