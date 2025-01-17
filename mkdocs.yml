@@ -32,7 +32,8 @@ theme:
 plugins:
   - blog:
       blog_toc: true
-  - search  # Enables the search plugin (for a searchable site)
+  - search  
+  - tags
 
 # Markdown Extensions
 markdown_extensions:
