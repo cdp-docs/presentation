@@ -17,7 +17,7 @@ You will learn:
 
 - [x] The rundown on Smart Contracts and their value
 - [x] How to create and deploy a token contract for in-game transactions (including a supply of Game tokens)
-- [x] How to interact with the contract in your video game code
+- [x] How to interact with the contract in your game code
 
 Keep reading to learn how to apply Smart Contracts to an in-game purchase from a store.
 
@@ -57,10 +57,10 @@ At this point you can see how Smart Contracts might be useful for various agreem
 
 ### Tools used
 
-- **Coinbase Developer Platform (CDP):** Tools and APIs for developers to integrate Coinbase services into decentralized applications, enabling easy management of crypto assets, transactions, and more
-  - **Coinbase Wallet API:** Create and manage cryptocurrency wallets, enabling secure storage and transactions of digital assets
-  - **Coinbase Transfers API:** Provides programmatic access to initiate, monitor, and manage cryptocurrency transfers, allowing integration of payments and transfers into applications
-  - **Platform Portal:** Web interface where developers can manage their projects, access API documentation, and configure their API keys and other settings for integration with Coinbase’s services
+- **[Coinbase Developer Platform (CDP)](https://www.coinbase.com/developer-platform):** Tools and APIs for developers to integrate Coinbase services into decentralized applications, enabling easy management of crypto assets, transactions, and more
+  - **[CDP MPC Wallet API](https://docs.cdp.coinbase.com/mpc-wallet/docs/welcome):** Create and manage cryptocurrency wallets, enabling secure storage and transactions of digital assets
+  - **[CDP Transfers API](https://docs.cdp.coinbase.com/mpc-wallet/docs/transfers):** Provides programmatic access to initiate, monitor, and manage cryptocurrency transfers, allowing integration of payments and transfers into applications
+  - **[CDP Portal](https://portal.cdp.coinbase.com/):** Web interface where developers can manage their projects, access API documentation, and configure their API keys and other settings for integration with Coinbase’s services
 
 While Smart Contracts come in multiple flavors, this guide will be using `ERC20` format.
 
@@ -73,14 +73,14 @@ While Smart Contracts come in multiple flavors, this guide will be using `ERC20`
 
     Read more in the [Open Zeppelin docs](https://docs.openzeppelin.com/contracts/3.x/tokens).
 
-## Typical Workflow
+## Typical contract deployment workflow
 
 ### Without CDP SDK
 
 Typically, to create and deploy an ERC20 Smart Contract involves many steps:
 
 1. Creating the Solidity contract code
-1. Implementing its required functions (`totalSupply`, `balanceof`, `transfer`, `approve`, `transferFrom`, etc. OpenZeppelin offers these implementations [out of the box](https://docs.openzeppelin.com/contracts/5.x/api/token/erc20)) and any custom features
+1. Implementing its required functions (`totalSupply`, `balanceof`, `transfer`, `approve`, `transferFrom`, etc. OpenZeppelin offers these as a part of their [implementation](https://docs.openzeppelin.com/contracts/5.x/api/token/erc20)) and any custom features
 1. Compiling the contract into bytecote for the [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/) to execute
 1. Deploy the contract 
 1. Finally, interact with the contract
@@ -118,11 +118,11 @@ As a recommendation, these steps should also include testing (using tools like `
     }
     ```
 
-Keep reading and we will compare why the Coinbase Developer Platform SDK makes these process much easier.
+Keep reading and we will compare why the CDP SDK makes this process much easier.
 
 ### With CDP SDK
 
-See how intensive a typical workflow is when creating even a basic Smart Contract? This is where the Coinbase Developer Platform SDK can really step in to alleviate you of your pain!
+See how intensive a typical workflow is when creating even a basic Smart Contract? This is where the CDP SDK can help alleviate you of those pains.
 
 Coinbase provides SDKs and APIs to help simplify blockchain development which you can use to streamline the process and focus on other functionality.
 
@@ -137,7 +137,7 @@ Let's get started.
 
 ## Step 1 -- Create and deploy a Smart Contract
 
-That's right, it's just one step to create and deploy a Smart Contract using CDP's Wallet API!
+That's right, it's just one step to create and deploy a Smart Contract using CDP's Wallet API.
 
 Using a new or existing wallet, you can call Coinbase's `deploy_token` function which takes 3 parameters:
 
