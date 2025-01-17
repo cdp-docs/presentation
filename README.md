@@ -49,3 +49,7 @@ Setup and getting started guides (i.e. API key configuration and creating and fu
 I will probably end up moving my old blog posts over here one day, so I wrote this as a way to showcase other tutorials in the future.
 
 The Smart Contracts 101 guide is what serves as my presentation assignment: https://cdp-docs.github.io/presentation/tutorials/smart-contracts-101/. 
+
+### Code
+
+The example game code can be found in [game.py](examples/game.py).
