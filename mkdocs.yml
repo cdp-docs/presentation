@@ -1,1 +1,57 @@
-site_name: My Docs
+site_name: CDP Presentation Docs
+site_url: https://mydocs.example.com
+
+# Navigation structure
+nav:
+  - Welcome: 
+      - Getting Started: welcome/getting-started.md
+      - Create a wallet: welcome/backend-create-wallet.md
+  - Blog:
+    - blog/index.md
+
+# Theme configuration
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: pink
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+  features:
+    - content.code.copy
+    - content.code.annotate 
+    - navigation
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+# Plugins 
+plugins:
+  - blog:
+      blog_toc: true
+  - search  # Enables the search plugin (for a searchable site)
+
+# Markdown Extensions
+markdown_extensions:
+  - toc:  
+      permalink: true
+      title: On this page
+  - admonition:  
+  - codehilite:  
+  - footnotes:  
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.blocks.admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
