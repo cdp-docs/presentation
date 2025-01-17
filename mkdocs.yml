@@ -6,8 +6,10 @@ nav:
   - Welcome: 
       - Getting Started: welcome/getting-started.md
       - Create a wallet: welcome/backend-create-wallet.md
-  - Blog:
-    - blog/index.md
+  - Tutorials:
+      - Smart Contracts 101: tutorials/smart-contracts-101.md
+  #- Blog:
+  #  - blog/index.md
 
 # Theme configuration
 theme:
