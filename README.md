@@ -14,6 +14,7 @@ Access locally at http://127.0.0.1:8000/.
 
 ## Repo Structure
 
+```
 ├── docs
 │   ├── blog
 │   │   ├── index.md
@@ -30,6 +31,7 @@ Access locally at http://127.0.0.1:8000/.
 │       └── getting-started.md
 ├── mkdocs.yml
 └── README.md
+```
 
 ### `mkdocs.yml`
 
