@@ -23,7 +23,7 @@ Keep reading to learn how to apply Smart Contracts to an in-game purchase from a
 
 ### Prerequisites
 
-It is assumed you have already completed the [Getting Started](../../getting-started.md) guide. If so, you should have:
+It is assumed you have already completed the [Getting Started](../../welcome/getting-started.md) guide. If so, you should have:
 
 - [x] An existing Coinbase account
 - [x] A configured API key

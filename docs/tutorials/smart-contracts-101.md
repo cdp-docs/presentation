@@ -23,7 +23,7 @@ Keep reading to learn how to apply Smart Contracts to an in-game purchase from a
 
 ### Prerequisites
 
-It is assumed you have already completed the [Getting Started](../../getting-started.md) guide. If so, you should have:
+It is assumed you have already completed the [Getting Started](../welcome/getting-started.md) guide. If so, you should have:
 
 - [x] An existing Coinbase account
 - [x] A configured API key
@@ -31,7 +31,7 @@ It is assumed you have already completed the [Getting Started](../../getting-sta
 This guide also assumes: 
 
 - You are running Python `v3.12.3+`
-- You have at least two [funded wallets](../../welcome/backend-create-wallet.md); One for a game player and another for the game shop
+- You have at least two [funded wallets](../welcome/backend-create-wallet.md); One for a game player and another for the game shop
 
 ### What is a Smart Contract?
 
@@ -182,7 +182,7 @@ Coinbase provides [a nice dashboard](https://portal.cdp.coinbase.com/products/on
 
 Once your new token contract has been deployed, you should see it here.
 
-![CDP portal](../../img/cdp_portal.png)
+![CDP portal](../img/cdp_portal.png)
 
 ## Step 2 -- Inspect the public contract
 
@@ -192,7 +192,7 @@ Using a Block Explorer, you can transparently view and interact with your new co
 
 Check out the [Sepola Base Scan](https://sepolia.basescan.org/) Block Explorer to verify that you can see the token contract at the address you obtained from the CDP Portal:
 
-![sepolia](../../img/sepolia.png)
+![sepolia](../img/sepolia.png)
 
 ## Step 3 -- Interact with contract from game code
 
