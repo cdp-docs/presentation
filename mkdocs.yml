@@ -8,8 +8,6 @@ nav:
       - Create a wallet: welcome/backend-create-wallet.md
   - Tutorials:
       - Smart Contracts 101: tutorials/smart-contracts-101.md
-  #- Blog:
-  #  - blog/index.md
 
 # Theme configuration
 theme:
@@ -30,8 +28,6 @@ theme:
 
 # Plugins 
 plugins:
-  - blog:
-      blog_toc: true
   - search  
   - tags
 
