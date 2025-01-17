@@ -73,7 +73,7 @@ While Smart Contracts come in multiple flavors, this guide will be using `ERC20`
 
     Read more in the [Open Zeppelin docs](https://docs.openzeppelin.com/contracts/3.x/tokens).
 
-## Typical Workflow
+## Typical Contract Deployment Workflow
 
 ### Without CDP SDK
 
