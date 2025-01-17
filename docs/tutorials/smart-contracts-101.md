@@ -118,7 +118,7 @@ As a recommendation, these steps should also include testing (using tools like `
     }
     ```
 
-Keep reading and we will compare why the Coinbase Developer Platform SDK makes these process much easier.
+Keep reading and we will compare why the CDP SDK makes this process much easier.
 
 ### With CDP SDK
 
