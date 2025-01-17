@@ -80,7 +80,7 @@ While Smart Contracts come in multiple flavors, this guide will be using `ERC20`
 Typically, to create and deploy an ERC20 Smart Contract involves many steps:
 
 1. Creating the Solidity contract code
-1. Implementing its required functions (`totalSupply`, `balanceof`, `transfer`, `approve`, `transferFrom`, etc. OpenZeppelin offers these implementations [out of the box](https://docs.openzeppelin.com/contracts/5.x/api/token/erc20)) and any custom features
+1. Implementing its required functions (`totalSupply`, `balanceof`, `transfer`, `approve`, `transferFrom`, etc. OpenZeppelin offers these as a part of their [implementation](https://docs.openzeppelin.com/contracts/5.x/api/token/erc20)) and any custom features
 1. Compiling the contract into bytecote for the [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/) to execute
 1. Deploy the contract 
 1. Finally, interact with the contract
@@ -122,7 +122,7 @@ Keep reading and we will compare why the Coinbase Developer Platform SDK makes t
 
 ### With CDP SDK
 
-See how intensive a typical workflow is when creating even a basic Smart Contract? This is where the Coinbase Developer Platform SDK can really step in to alleviate you of your pain!
+See how intensive a typical workflow is when creating even a basic Smart Contract? This is where the CDP SDK can help alleviate you of those pains.
 
 Coinbase provides SDKs and APIs to help simplify blockchain development which you can use to streamline the process and focus on other functionality.
 
@@ -137,7 +137,7 @@ Let's get started.
 
 ## Step 1 -- Create and deploy a Smart Contract
 
-That's right, it's just one step to create and deploy a Smart Contract using CDP's Wallet API!
+That's right, it's just one step to create and deploy a Smart Contract using CDP's Wallet API.
 
 Using a new or existing wallet, you can call Coinbase's `deploy_token` function which takes 3 parameters:
 
