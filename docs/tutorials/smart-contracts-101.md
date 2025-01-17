@@ -57,7 +57,7 @@ At this point you can see how Smart Contracts might be useful for various agreem
 
 ### Tools used
 
-- **Coinbase Developer Platform:** Tools and APIs for developers to integrate Coinbase services into decentralized applications, enabling easy management of crypto assets, transactions, and more
+- **Coinbase Developer Platform (CDP):** Tools and APIs for developers to integrate Coinbase services into decentralized applications, enabling easy management of crypto assets, transactions, and more
   - **Coinbase Wallet API:** Create and manage cryptocurrency wallets, enabling secure storage and transactions of digital assets
   - **Coinbase Transfers API:** Provides programmatic access to initiate, monitor, and manage cryptocurrency transfers, allowing integration of payments and transfers into applications
   - **Platform Portal:** Web interface where developers can manage their projects, access API documentation, and configure their API keys and other settings for integration with Coinbase’s services
@@ -75,7 +75,7 @@ While Smart Contracts come in multiple flavors, this guide will be using `ERC20`
 
 ## Typical Workflow
 
-### Without Coinbase SDK
+### Without CDP SDK
 
 Typically, to create and deploy an ERC20 Smart Contract involves many steps:
 
@@ -120,7 +120,7 @@ As a recommendation, these steps should also include testing (using tools like `
 
 Keep reading and we will compare why the Coinbase Developer Platform SDK makes these process much easier.
 
-### With Coinbase SDK
+### With CDP SDK
 
 See how intensive a typical workflow is when creating even a basic Smart Contract? This is where the Coinbase Developer Platform SDK can really step in to alleviate you of your pain!
 
@@ -202,7 +202,7 @@ Let's put this use case in terms of our real-world example: in-game currency!
 
 We want to give players the ability to buy items using our new `GameCoin`. This means that whenever a player purchases an item from our store, we need to interact with our token contract to handle the transfer.
 
-### Using Coinbase Wallet API with `invoke_contract`
+### Using CDP Wallet API with `invoke_contract`
 
 Assuming you have a persisted wallet, using the deployed token contract address you could define a buy_item function like so:
 
@@ -256,7 +256,7 @@ def buy_item(player_wallet, contract_address, item_price, shop_address):
     Note `invoke_contract` being used on the player's wallet. This is a part of the CDP API. All ERC20 functions are built-in and ready to use out of the box.
     Read more in [Smart Contract Deployments](https://docs.cdp.coinbase.com/mpc-wallet/docs/smart-contract-deployments#deploying-an-erc-20).
 
-### Using Coinbase Transfers API
+### Using CDP Transfers API
 
 Alternatively, for simple transfers, you can also use the [Coinbase Transfers API](https://docs.cdp.coinbase.com/mpc-wallet/docs/transfers):
 
