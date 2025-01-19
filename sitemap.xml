@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://mydocs.example.com/</loc>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://mydocs.example.com/tutorials/smart-contracts-101/</loc>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://mydocs.example.com/welcome/backend-create-wallet/</loc>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://mydocs.example.com/welcome/getting-started/</loc>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+</urlset>
